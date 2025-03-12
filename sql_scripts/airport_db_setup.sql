@@ -1,28 +1,18 @@
-CREATE DATABASE airport_data_pipeline
-GO
-
 USE airport_data_pipeline
 GO
-
-SELECT COUNT(*) FROM airport_details
-
 
 CREATE TABLE airports(
     airport_id INT PRIMARY KEY,
     name VARCHAR(100),
     city VARCHAR(50),
     country VARCHAR(50),
-    iata_code VARCHAR(10),
-    icao_code VARCHAR(10),
     latitude DECIMAL(10,6),
-    longitude DECIMAL(10,6),
-    elevation INT
+    longitude DECIMAL(10,6)
 )
 GO
 
 CREATE TABLE flights(
     flight_id INT PRIMARY KEY,
-    airline VARCHAR(100),
     flight_number VARCHAR(10),
     departure_airport VARCHAR(10),
     arrival_airport VARCHAR(10),

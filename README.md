@@ -59,29 +59,23 @@ DB_CONFIG = {
 ## **🔄 ETL Pipeline Execution**
 ### **1️⃣ Fetch Data from API / CSV**
 ```bash
-python etl_scripts/extract.py
+python etl_scripts/data_pipeline.py
 ```
 
 ### **2️⃣ Transform Data**
 ```bash
-python etl_scripts/transform.py
+python etl_scripts/data_pipeline.py
 ```
 
 ### **3️⃣ Load Data into SQL Server**
 ```bash
-python etl_scripts/load.py
-```
-
-Or run the entire ETL process in one step:
-```bash
-python etl_scripts/main.py
+python etl_scripts/data_pipeline.sql
 ```
 
 ---
 ## **📊 Data Sources**
 - **FAA Passenger Data:** [FAA Website](https://www.faa.gov/airports/planning_capacity/passenger_allcargo_stats/)
 - **Kaggle Datasets:** [Kaggle](https://www.kaggle.com/)
-
 ---
 ## **🚀 Future Improvements**
 - Implement **Airflow** for ETL scheduling

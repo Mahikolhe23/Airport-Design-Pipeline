@@ -7,11 +7,12 @@ import config as cg
 
 
 # SQL Server connection details
-server = cg.server
-database = cg.database
-user = cg.user
-password = cg.password
-driver = cg.driver
+server = 'localhost,1433'
+database = 'airport_data_pipeline'
+user = 'SA'
+password = 'Mahikolhe@23'
+driver = 'ODBC Driver 18 for SQL Server'
+
 
 # Construct the connection string for SQLAlchemy
 params = urllib.parse.quote_plus(f"DRIVER={driver};SERVER={server};DATABASE={database};UID={user};PWD={password};TrustServerCertificate=yes")
