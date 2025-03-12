@@ -3,7 +3,6 @@ import pandas as pd
 from io import StringIO
 from sqlalchemy import create_engine
 import urllib
-import config as cg
 
 # SQL Server connection details
 server = 'localhost,1433'
